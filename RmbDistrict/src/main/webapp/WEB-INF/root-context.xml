@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="springDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" >
+
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://127.0.0.1/rmbdistrict"/>
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+		
+		
+		<!-- live db  please add User Name & Password -->
+		
+		
+<!-- 	 <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://173.45.79.122/fhbcuein_rdssmbdtristasricjht"/>  
+		<property name="username" value="fhbcueinotechaab" />
+		<property name="password" value="CuBe9bH!7y@2BnFrgv" /> -->
+		
+	<!-- 	 <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://rmbdistrict3060.in/rrbsiti6_rmbusdiersuttserrict"/>  
+		<property name="username" value="rrbsiti6_rusmbusdierseutt" />
+		<property name="password" value="y!47VJ1UELC[" /> -->
+				
+		<property name="maxIdle" value="100"/>
+		<property name="minIdle" value="10"/>
+   		<property name="validationQuery" value="select curdate()"/>
+   		<property name="removeAbandoned" value="true"/>
+   		<property name="initialSize" value="20" />
+   		<property name="maxActive" value="30" />		
+	</bean>	
+	<bean id="loginImpl" class="com.ui.dao.impl.LoginDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>	
+	<bean id="rotaryYearImpl" class="com.ui.dao.impl.RotaryYearDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="clubDAOImpl" class="com.ui.dao.impl.ClubDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="fellowshipDAO" class="com.ui.dao.impl.FellowshipDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	 <bean id="eventImpl" class="com.ui.dao.impl.EventDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="memberImpl" class="com.ui.dao.impl.MemberDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="newsImpl" class="com.ui.dao.impl.NewsDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	
+	<bean id="serviceProjectImpl" class="com.ui.dao.impl.ServiceProjectDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="albumImpl" class="com.ui.dao.impl.AlbumDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="clubBulletinImpl" class="com.ui.dao.impl.ClubBulletinDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="memberCategoryImpl" class="com.ui.dao.impl.MemberCategoryDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="memberTypeImpl" class="com.ui.dao.impl.MemberTypeDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="countryImpl" class="com.ui.dao.impl.CountryDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="stateImpl" class="com.ui.dao.impl.StateDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="memberEducationImpl" class="com.ui.dao.impl.MemberEducationDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="referenceImpl" class="com.ui.dao.impl.ReferenceDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="paymentImpl" class="com.ui.dao.impl.PaymentDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="currencyImpl" class="com.ui.dao.impl.CurrencyDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="boardOfDirectorsImpl" class="com.ui.dao.impl.BoardOfDirectorsDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="membersCommitteeImpl" class="com.ui.dao.impl.MembersCommitteeDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="socialMediaImpl" class="com.ui.dao.impl.SocialMediaDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>		
+	<bean id="awardImpl" class="com.ui.dao.impl.AwardDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="beneficiaryTypeImpl" class="com.ui.dao.impl.BeneficiaryTypeDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="transactionForDAOImpl" class="com.ui.dao.impl.TransactionForDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="businessCategoryDAOImpl" class="com.ui.dao.impl.BusinessCategoryDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	<bean id="memberPostDAOImpl" class="com.ui.dao.impl.MemberPostDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>
+	
+	<bean id="memberReferralDAOImpl" class="com.ui.dao.impl.MemberReferralDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>	
+	<bean id="accessControlDAOImpl" class="com.ui.dao.impl.AccessControlDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>	
+	<bean id="sliderDAOImpl" class="com.ui.dao.impl.SliderDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean> 
+	<bean id="ManageAdminDAOImpl" class="com.ui.dao.impl.ManageAdminDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>		
+	<bean id="ReadExcelDAO" class="com.ui.dao.impl.ReadExcelDAOImpl">
+		<property name="dataSource" ref="springDataSource"></property> 
+	</bean>	
+</beans>

@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title> User Profile </title>
+
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<!-- fonts -->
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+<!-- styles -->
+<link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+<!-- -->
+<link href="css/style.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">         
+
+
+
+<script src="js/slimselect.min.js"></script>
+<link href="css/slimselect.min.css" rel="stylesheet"></link>
+
+
+<!--*******-->
+<script src="https://cdn.ckeditor.com/4.12.1/basic/ckeditor.js"></script>
+
+
+<!--<link rel="stylesheet" href="css/profile.css">-->
+<link rel="stylesheet" href="css/smart_wizard.min.css">
+<link rel='stylesheet' href='css/bootstrap.min.css'>
+
+
+<!--***datetimepicker****-->
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.1.221/styles/kendo.common-material.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.1.221/styles/kendo.material.min.css" />
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.1.221/styles/kendo.material.mobile.min.css" />
+<script src="https://kendo.cdn.telerik.com/2018.1.221/js/jquery.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2018.1.221/js/kendo.all.min.js"></script>
+
+
+  
+
+
+<!-- includes js File START-->
+<script src="js/w3data.js"></script>
+<!-- includes js File END-->
+
+
+
+</head>
+
+<body id="page-top">
+
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+<!-- Sidebar - Brand -->
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+<div class="sidebar-brand-icon">
+<!--<i class="fas fa-laugh-wink"></i>-->
+RMB&nbsp;
+</div>
+<!--<div class="sidebar-brand-text"> ERODE UNITED </div>-->
+</a>
+
+<!-- Divider -->
+<hr class="sidebar-divider my-0">
+
+<!-- Nav Item - Dashboard -->
+<li class="nav-item active">
+<a class="nav-link" href="index.html">
+<i class="fas fa-fw fa-tachometer-alt"></i>
+<span>Dashboard</span></a>
+</li>
+
+
+<!-- Nav Item - Charts -->
+<li class="nav-item">
+<a class="nav-link" href="#">
+<i class="fas fa-fw fa-chart-area"></i>
+<span> Payments </span></a>
+</li>
+
+<!-- Nav Item - Charts -->
+<li class="nav-item">
+<a class="nav-link" href="#">
+<i class="fas fa-fw fa-chart-area"></i>
+<span> Events </span></a>
+</li>
+
+
+<!-- Nav Item - Charts -->
+<li class="nav-item">
+<a class="nav-link" href="#">
+<i class="fas fa-fw fa-chart-area"></i>
+<span> Chapter's Summary </span></a>
+</li>
+
+
+<!-- Nav Item - Charts -->
+<li class="nav-item">
+<a class="nav-link" href="#">
+<i class="fas fa-fw fa-chart-area"></i>
+<span> R2R Meetings </span></a>
+</li>
+
+
+<!-- Nav Item - Charts -->
+<li class="nav-item">
+<a class="nav-link" href="#">
+<i class="fas fa-fw fa-chart-area"></i>
+<span>  References </span></a>
+</li>
+
+
+<!-- Nav Item - Charts -->
+<li class="nav-item">
+<a class="nav-link" href="#">
+<i class="fas fa-fw fa-chart-area"></i>
+<span>  Business Transactions  </span></a>
+</li>
+
+
+
+
+<!-- Nav Item - Pages Collapse Menu -->
+<!--<li class="nav-item">
+<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+<i class="fas fa-fw fa-cog"></i>
+<span>Events</span>
+</a>
+<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+<div class="bg-white py-2 collapse-inner rounded">
+<h6 class="collapse-header">Custom Components:</h6>
+<a class="collapse-item" href="buttons.html">Buttons</a>
+<a class="collapse-item" href="cards.html">Cards</a>
+</div>
+</div>
+</li>-->
+
+
+<!-- Divider -->
+<!--
+<hr class="sidebar-divider d-none d-md-block">
+-->
+
+<!-- Sidebar Toggler (Sidebar) -->
+<!--<div class="text-center d-none d-md-inline">
+<button class="rounded-circle border-0" id="sidebarToggle"></button>
+</div>-->
+
+</ul>
+<!-- End of Sidebar -->
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+<!-- Main Content -->
+<div id="content">
+
+<!-- Topbar -->
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+<!-- Sidebar Toggle (Topbar) -->
+<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+<i class="fa fa-bars"></i>
+</button>
+
+
+<!-- Topbar Navbar -->
+<ul class="navbar-nav ml-auto">
+
+<!-- Nav Item - Search Dropdown (Visible Only XS) -->
+<li class="nav-item dropdown no-arrow d-sm-none">
+<a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i class="fas fa-search fa-fw"></i>
+</a>
+<!-- Dropdown - Messages -->
+<div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+<form class="form-inline mr-auto w-100 navbar-search">
+<div class="input-group">
+<input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+<div class="input-group-append">
+<button class="btn btn-primary" type="button">
+<i class="fas fa-search fa-sm"></i>
+</button>
+</div>
+</div>
+</form>
+</div>
+</li>
+
+<!-- Nav Item - Alerts -->
+<li class="nav-item dropdown no-arrow mx-1">
+<a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i class="fas fa-bell fa-fw"></i>
+<!-- Counter - Alerts -->
+<span class="badge badge-danger badge-counter">3+</span>
+</a>
+<!-- Dropdown - Alerts -->
+<div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+<h6 class="dropdown-header">
+Alerts Center
+</h6>
+<a class="dropdown-item d-flex align-items-center" href="#">
+<div class="mr-3">
+<div class="icon-circle bg-primary">
+<i class="fas fa-file-alt text-white"></i>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">December 12, 2019</div>
+<span class="font-weight-bold">A new monthly report is ready to download!</span>
+</div>
+</a>
+<a class="dropdown-item d-flex align-items-center" href="#">
+<div class="mr-3">
+<div class="icon-circle bg-success">
+<i class="fas fa-donate text-white"></i>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">December 7, 2019</div>
+$290.29 has been deposited into your account!
+</div>
+</a>
+<a class="dropdown-item d-flex align-items-center" href="#">
+<div class="mr-3">
+<div class="icon-circle bg-warning">
+<i class="fas fa-exclamation-triangle text-white"></i>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">December 2, 2019</div>
+Spending Alert: We've noticed unusually high spending for your account.
+</div>
+</a>
+<a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+</div>
+</li>
+
+
+<div class="topbar-divider d-none d-sm-block"></div>
+
+<!-- Nav Item - User Information -->
+<li class="nav-item dropdown no-arrow">
+<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="mr-2 d-none d-lg-inline text-gray-600 small"> Bhargav Bhatt </span>
+<img class="img-profile rounded-circle" src="img/profile-pic.jpg">
+</a>
+<!-- Dropdown - User Information -->
+<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+<a class="dropdown-item" href="#">
+<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+Profile
+</a>
+<a class="dropdown-item" href="#">
+<i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+Settings
+</a>
+<a class="dropdown-item" href="#">
+<i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+Activity Log
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+Logout
+</a>
+</div>
+</li>
+
+</ul>
+
+</nav>
+<!-- End of Topbar -->
+
+
+<div class="container-fluid"> 
+
+<div class="row">
+
+<div class="col-lg-12">
+
+<!-- SmartWizard html -->
+<div id="smartwizard">
+
+<ul class="card-header pa-0">
+
+<li>
+<a href="#step-1"> Step 1 <br />
+<small style="padding-left: 0px; line-height: 25px;"> Members Info </small>
+</a>
+</li>
+
+<li><a href="#step-2"> Step 2 <br /><small> Residential Address </small></a></li>
+
+<li><a href="#step-3"> Step 3 <br /><small> Family Info </small></a></li>
+
+<li><a href="#step-4"> Step 4 <br /><small> References </small></a></li>
+
+<li><a href="#step-4"> Step 5 <br /><small> Payments </small></a></li>
+
+</ul>
+
+<div>
+
+<div id="step-1" class="">
+
+
+
+<!-- Card Content -->
+<div class="card-body">
+
+<!-- Content Row -->
+<div class="row">
+
+<!-- Border Left Utilities -->
+<div class="col-lg-2">
+<div class="card border-bottom-primary">
+<div style="padding: 10px;" class="card-body">
+<div class="profile-sidebar">
+
+<div class="profile-img">
+<img class="img-responsive" src="img/profile-pic.jpg" alt="" />
+<div class="file btn btn-lg btn-primary">
+Change Photo
+<input type="file" name="file" />
+</div>
+</div>
+
+<div class="profile-usertitle">
+<div class="profile-usertitle-name">
+Bhargav Bhatt
+</div>
+<div class="profile-usertitle-job">
+Centre Incharge
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Border Left Utilities -->
+<div class="col-lg-10">
+<div class="card">
+<div style="padding: 10px;" class="card-body">
+<form class="">
+
+
+<div class="form-group row">
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+
+<div id="example">
+
+<div class="demo-section k-content">
+<h4>Remind me on</h4>
+<input id="datetimepicker" title="datetimepicker" style="width: 100%;" />
+</div>
+
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> First Name </label>
+<input class="form-control" placeholder="First Name" value="Bhargav" type="text">
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Last Name </label>
+<input class="form-control" placeholder="Last Name" value="Bhatt" type="text">
+</div>
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> User Picture </label>
+<div class="custom-file">
+<input type="file" class="custom-file-input input-group-lg" id="customFile" name="filename">
+<label class="custom-file-label" for="customFile">Choose file</label>
+</div>    
+</div>
+    
+</div>
+
+<div class="form-group row">
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Address line 1 </label>
+<input class="form-control" placeholder="Address line 1" value="507 Sears " type="text">
+</div>
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Address line 2 </label>
+<input class="form-control" placeholder="Address line 2" value="Gotri Road, Sevasi," type="text">
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Address line 3  </label>
+<input class="form-control" placeholder="Address line 3" value="Vadodara, Gujarat 391101" type="text">
+</div>
+
+</div>
+
+<div class="form-group row">
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Country <span class="text-danger">*</span> </label>
+<input class="form-control" placeholder="Country" value="INDIA" type="text">
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> State <span class="text-danger">*</span> </label>
+<input class="form-control" placeholder="State" value="Gujrat" type="text">
+</div>
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> City <span class="text-danger">*</span> </label>
+<input class="form-control" placeholder="City"  value="Vadodra" type="text">
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Pincode <span class="text-danger">*</span> </label>
+<input class="form-control" placeholder="Pincode" value="390012" type="text">
+</div>
+
+
+</div>
+
+<div class="form-group row">
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 designation">
+<label> Designation </label>
+<div class="form-group input-group mb-0">
+<select class="form-control">
+<option selected> Selecte Designation </option>
+<option> Accounts </option>
+<option> Activities </option>
+<option> Administrotion </option>
+<option> Dietary </option>
+<option> General </option>
+<option selected> HR </option>
+</select>
+<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#AddDesignationModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>
+</div>
+</div>
+
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  designation">
+<label> Designation </label>
+<div class="form-group input-group mb-0">
+<select class="form-control">
+<option selected> Selecte Designation </option>
+<option> Accounts </option>
+<option> Activities </option>
+<option> Administrotion </option>
+<option> Dietary </option>
+<option> General </option>
+<option selected> HR </option>
+</select>
+<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#AddDesignationModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>
+</div>
+</div>
+    
+ 
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Previleges / Role  </label>
+<div class="form-group input-group mb-0">
+<select class="form-control">
+<option> Selecte Previleges / Role </option>
+<option> Administator </option>
+<option selected> Centre Incharge </option>
+<option> Mediacal Officer </option>
+<option> PCA </option>
+<option> PCA Head </option>
+<option> Super Administator </option>
+</select>
+<!--<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#AddDesignationModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>-->
+</div>
+</div>
+
+</div>
+
+
+
+
+</form>  
+</div>
+</div>
+</div>
+
+
+</div>               
+        
+
+
+
+
+
+
+
+
+<!-- Content Row 2 Start -->
+<div class="row">
+
+<!-- Border Left Utilities -->
+<div class="col-lg-12">
+<div style="margin-top: 0px;" class="card border-bottom-primary">
+<div style="padding: 10px;" class="card-body">
+<form class="">
+
+
+<div class="form-group row">
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> User Type  </label>
+<div class="form-group input-group mb-0">
+<select class="form-control">
+<option selected> Selecte User Type </option>
+<option> Resident </option>
+<option selected> Employee </option>
+<option> Supplier </option>
+</select>
+<!--<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#AddDesignationModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>-->
+</div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> First Name </label>
+<input class="form-control" placeholder="First Name" value="Bhargav" type="text">
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Last Name </label>
+<input class="form-control" placeholder="Last Name" value="Bhatt" type="text">
+</div>
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> User Picture </label>
+<div class="custom-file">
+<input type="file" class="custom-file-input input-group-lg" id="customFile" name="filename">
+<label class="custom-file-label" for="customFile">Choose file</label>
+</div>    
+</div>
+    
+</div>
+
+
+
+
+<div class="form-group row">
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Address line 1 </label>
+<input class="form-control" placeholder="Address line 1" value="507 Sears " type="text">
+</div>
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Address line 2 </label>
+<input class="form-control" placeholder="Address line 2" value="Gotri Road, Sevasi," type="text">
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Address line 3  </label>
+<input class="form-control" placeholder="Address line 3" value="Vadodara, Gujarat 391101" type="text">
+</div>
+
+</div>
+
+
+
+<div class="form-group row">
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Country <span class="text-danger">*</span> </label>
+<input class="form-control" placeholder="Country" value="INDIA" type="text">
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> State <span class="text-danger">*</span> </label>
+<input class="form-control" placeholder="State" value="Gujrat" type="text">
+</div>
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> City <span class="text-danger">*</span> </label>
+<input class="form-control" placeholder="City"  value="Vadodra" type="text">
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Pincode <span class="text-danger">*</span> </label>
+<input class="form-control" placeholder="Pincode" value="390012" type="text">
+</div>
+
+
+</div>
+    
+
+
+<div class="form-group row">
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 designation">
+<label> Designation </label>
+<div class="form-group input-group mb-0">
+<select class="form-control">
+<option selected> Selecte Designation </option>
+<option> Accounts </option>
+<option> Activities </option>
+<option> Administrotion </option>
+<option> Dietary </option>
+<option> General </option>
+<option selected> HR </option>
+</select>
+<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#AddDesignationModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>
+</div>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 slocation">
+<label> Select Location </label>
+<div class="form-group input-group mb-0">
+<select id="slocation" multiple>
+<option selected value="value 1"> Kadji Care & Rehabs PVT. LTD. </option>
+<option value="value 2"> Kadji Care - Caring Like Family </option>
+<option value="value 3"> Kadji House 1  </option>
+<option value="value 4"> Kadji House 2  </option>
+<option value="value 5"> Kadji House 3 </option>
+<option value="value 6"> Kadji House 4 </option>
+<option value="value 7"> Kadji House 5 </option>
+<option value="value 8"> Kadji House 6 </option>
+</select>
+<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#AddUserModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>
+</div>
+</div>
+
+    
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Previleges / Role  </label>
+<div class="form-group input-group mb-0">
+<select class="form-control">
+<option> Selecte Previleges / Role </option>
+<option> Administator </option>
+<option selected> Centre Incharge </option>
+<option> Mediacal Officer </option>
+<option> PCA </option>
+<option> PCA Head </option>
+<option> Super Administator </option>
+</select>
+<!--<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#AddDesignationModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>-->
+</div>
+</div>
+
+</div>
+
+
+
+<div class="form-group row">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sgroup">
+<label> Select Group </label>
+<div class="form-group input-group mb-0">
+<select id="sgroup" multiple>
+<option selected value="value 1"> Accounts </option>
+<option value="value 2"> Activities </option>
+<option selected value="value 3"> Administration </option>
+<option value="value 4"> Dietary </option>
+<option value="value 5"> General </option>
+<option selected value="value 6"> HR </option>
+</select>
+<span class="input-group-btn">
+<button style="border-radius: 0px 4px 4px 0px;" data-toggle="modal" data-target="#AddUserModal" class="btn btn-primary" type="button">
+<i class="fa fa-plus"></i>
+</button>
+</span>
+</div>
+</div>
+
+</div>
+
+
+    
+    
+
+<div class="form-group row">
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Email </label>
+<input class="form-control" placeholder="Email Address" value="bhargav@ultrainfotech.net" type="text">
+</div>
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Password </label>
+<div class="form-group pass_show"> 
+<input type="password" value="Th_L@lu-123" class="form-control" placeholder="Current Password"> 
+</div> 
+</div>
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+<label> Mobile #  </label>
+<input class="form-control" placeholder="Enter Mobile No." value="9427611304" type="text">
+</div>
+
+</div>
+
+
+<div class="form-group row">
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Gender </label>
+<select class="form-control">
+<option> Male </option>
+<option> Female </option>
+</select>
+</div>
+
+
+    
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Date of Birth </label>
+<input class="form-control" type="text"  placeholder="DD/MM/YYYY" value="27/04/1971"  data-mask="99/99/9999" />
+</div>
+
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> PAN </label>
+<input class="form-control" placeholder="PAN Card No." value="ABCD123A" type="text">
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<label> Aadhar Card No. </label>
+<input class="form-control" type="text"  placeholder="0123/4567/8910" value="0123/4567/8910"  data-mask="9999/9999/9999" />
+</div>
+
+</div>
+
+
+<hr>
+
+<div class="form-group row">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<a href="#" class="btn btn-md btn-success btn-block">
+Update Profile
+</a>
+</div>
+
+</div>
+
+
+
+</form>  
+</div>
+</div>
+</div>
+
+
+</div>               
+    
+    
+    
+</div>
+    
+
+</div>
+
+<div id="step-2" class="">
+<h2>Step 2 Content</h2>
+<div>Information for step 2</div>
+</div>
+
+<div id="step-3" class="">
+You may use a form as well!
+</div>
+
+<div id="step-4" class="">
+<h2>Step 4 Content</h2>
+<div class="panel panel-default">
+<div class="panel-heading">My Details</div>
+<table class="table">
+<tbody>
+<tr> <th>Name:</th> <td>Your Name</td> </tr>
+<tr> <th>Email:</th> <td>abc@example.com</td> </tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+<div class="container my-auto">
+<div class="copyright text-center my-auto">
+<span>Content Copyright &copy; RMBF Tamilnadu 2020 </span> &nbsp; |  &nbsp;
+<span> Powered by: <a href="https://www.myclubman.com/" style="color: #858796;" target="_blank"> MyClubman.com </a></span>
+</div>
+</div>
+</footer>
+<!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+<i class="fas fa-angle-up"></i>
+</a>
+
+
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+<a class="btn btn-primary" href="login.html">Logout</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+    
+<!-- Bootstrap core JavaScript-->
+<!--<script src="vendor/jquery/jquery.min.js"></script>-->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<!--<script src="vendor/jquery-easing/jquery.easing.min.js"></script>-->
+
+<!-- Custom scripts for all pages-->
+<!--<script src="js/sb-admin-2.min.js"></script>-->
+
+
+
+
+
+<!-- Include jQuery -->
+
+<!-- Include SmartWizard JavaScript source -->
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+<script type="text/javascript" src="js/jquery.smartWizard.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+// Smart Wizard
+$('#smartwizard').smartWizard({ 
+selected: 0, 
+theme: 'default',
+transitionEffect:'fade',
+toolbarSettings: {toolbarPosition: '',
+toolbarExtraButtons: [
+// {label: 'Finish', css: 'btn-info', onClick: function(){ alert('Finish Clicked'); }},
+// {label: 'Cancel', css: 'btn-danger', onClick: function(){ $('#smartwizard').smartWizard("reset"); }}
+]
+}
+});
+
+
+// External Button Events
+$("#reset-btn").on("click", function() {
+// Reset wizard
+$('#smartwizard').smartWizard("reset");
+return true;
+});
+
+$("#prev-btn").on("click", function() {
+// Navigate previous
+$('#smartwizard').smartWizard("prev");
+return true;
+});
+
+
+$("#next-btn").on("click", function() {
+// Navigate next
+$('#smartwizard').smartWizard("next");
+return true;
+});
+
+
+$("#theme_selector").on("change", function() {
+// Change theme
+$('#smartwizard').smartWizard("theme", $(this).val());
+return true;
+});
+
+});   
+</script>  
+    
+
+
+<!--inputmask-->
+<!--<script src="js/bootstrap-inputmask.js"></script>-->
+
+
+
+
+<script>
+
+$(document).ready(function(){
+$('.pass_show').append('<span class="ptxt">Show</span>');  
+});
+
+
+$(document).on('click','.pass_show .ptxt', function(){ 
+
+$(this).text($(this).text() == "Show" ? "Hide" : "Show"); 
+
+$(this).prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; }); 
+
+});  
+</script>
+
+
+
+<!-- Page level custom scripts this js for Date and time id's function -->
+<script src="js/kendo-function.js"></script>   
+
+
+
+</body>
+
+</html>

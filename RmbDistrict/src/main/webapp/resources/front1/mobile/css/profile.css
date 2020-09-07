@@ -1,0 +1,392 @@
+.profile{
+
+}
+
+
+.profile .panel-group {
+    margin-bottom: 0px;
+}
+
+
+
+.profile .panel-title {
+font-size: 17px;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+
+.profile  .panel-group .panel {
+    margin-bottom: -6px;
+    border-radius: 0px;
+
+}
+
+.profile  .panel {
+    
+    background-color: #fff;
+    border-bottom: 1px solid transparent;
+    border-radius: 0px;
+
+}
+
+
+.profile  .list-group-item a {
+    color: #333;
+    font-weight: 500;
+}
+
+
+.profile  .list-group-item i{
+    color: #003982;
+margin-right: 5px;
+}
+
+
+.profile .demo-card-wide.mdl-card {
+    width: 95%;
+    max-width: 512px;
+    margin: 0px auto;
+}
+
+
+.profile  .panel-heading {
+    padding: 6px 15px;
+    border-bottom: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+
+.profile  .panel-default>.panel-heading {
+    color: #fff;
+    background-color: #ffffff;
+    border-color: #ddd;
+    background: linear-gradient(#003d8d,#042e5a);
+}
+
+
+
+.profile  .list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+
+.profile .list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
+.profile .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #ddd;
+    background-color: #FAFAFA;
+    border-top-color: #e8e8e8;
+    background-color: #ffd740;
+    /* border: 1px solid #e8e8e8; */
+    box-shadow: 0 0 25px rgba(0,0,0,.04) inset;
+    -o-box-shadow: 0 0 25px rgba(0,0,0,.04) inset;
+    -moz-box-shadow: 0 0 25px rgba(0,0,0,.04) inset;
+    -webkit-box-shadow: 0 0 25px rgba(0,0,0,.04) inset;
+    padding: 8px;
+}
+
+.profile  .panel-default>.panel-heading i {
+
+top: -46px;
+right: 10px;
+color: #febd11;
+    margin-top: 6px;
+}
+
+
+
+
+.profile .container{
+position: absolute;
+ left: 49%; 
+top: 30px;
+/* transform: translate(-50%, 0); */
+perspective: 1000px;
+/* width: 330px; */
+/* height: 375px; */
+margin: 0 auto;
+}
+
+.jumbo {
+width: 100%;
+height: 130px;
+background: url(../images/hero.png) center center no-repeat;
+background-size: cover;
+}
+.icons {
+display: flex;
+justify-content: space-between;
+}
+
+
+.icons .big-icon {
+    width: 140px;
+    height: 140px;
+    /*background: url(../images/profile-pic-bnb.jpg) center top;*/
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-top: 0px;
+}
+
+
+
+.icons .big-icon img{
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+.icons .rate {
+width: 125px;
+display: flex;
+justify-content: space-between;
+order: -1;
+}
+.icons .rate .star-btn {
+margin-top: -27.5px;
+}
+.icons .rate .star-btn i {
+font-size: 26px;
+}
+.icons .rate .like-btn {
+margin-top: -27.5px;
+}
+.icons .rate .like-btn i {
+font-size: 22px;
+}
+.icons .add {
+width: 125px;
+display: flex;
+justify-content: flex-end;
+}
+.icons .add .add-btn {
+margin-top: -27.5px;
+}
+.icons .add .add-btn i {
+font-size: 28px;
+}
+.details {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 0px;
+margin-top: 60px;
+}
+.details h3 {
+    color: #013678;
+    font-size: 22px;
+    margin-top: 0px;
+    line-height: 24px;
+    margin: 6px 0;
+}
+.details p {
+color: #727272;
+margin-top: 0px;
+}
+.bio {
+margin-bottom: 80px;
+}
+.bio .title h6 {
+color: #212121;
+font-size: 18px;
+}
+.bio .content p {
+color: #727272;
+}
+.pics {
+margin-bottom: 50px;
+}
+.pics .title {
+margin-bottom: 20px;
+}
+.pics .title h6 {
+color: #212121;
+font-size: 18px;
+}
+.pics .row-1 .s12:nth-of-type(2) {
+margin-bottom: -10px;
+}
+.pics .row .s12:nth-of-type(1) {
+margin-bottom: 10px;
+}
+.pics .row .col .card {
+height: 260px;
+}
+.pics .row .col .card #first-img {
+height: 100%;
+background: url(http://www.wallpapers.rs/wallpapers/leonardo_dicaprio_in_movie_scene-1920x1200.jpg) center center;
+background-size: cover;
+}
+.pics .row .col .card #second-img {
+height: 100%;
+background: url(http://tremendouswallpapers.com/wp-content/uploads/2014/12/django-calvin-candie-leonardo-dicaprio-gives-the-hammer-in-movie-274680.jpg) center center;
+background-size: cover;
+}
+.pics .row .col .card #third-img {
+height: 100%;
+background: url(http://cdn.collider.com/wp-content/uploads/leonardo-dicaprio-wolf-of-wall-street.jpg) center center;
+background-size: cover;
+}
+.pics .row .col .card #forth-img {
+height: 100%;
+background: url(http://www.aceshowbiz.com/images/still/the-great-gatsby-still09.jpg) center center;
+background-size: cover;
+}
+.posts {
+margin-bottom: 50px;
+}
+.posts .title h6 {
+color: #212121;
+font-size: 18px;
+margin-bottom: 20px;
+}
+.posts .row {
+margin-bottom: 0px;
+}
+.posts .row .col .card {
+position: relative;
+}
+.posts .row .col .card .card-action {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.posts .row .col .card .card-action .tags {
+display: flex;
+}
+.posts .row .col .card .card-action .tags .chip:first-child {
+margin-right: 5px;
+}
+.posts .row .col .card .card-action .card-love {
+cursor: pointer;
+font-size: 25px;
+position: absolute;
+right: 10px;
+top: 10px;
+color: white;
+transition: all 100ms ease-in-out;
+}
+.posts .row .col .card .card-action .card-love:hover {
+color: #f9a825;
+}
+.blogs {
+margin-bottom: 80px;
+}
+.blogs .title {
+margin-bottom: 20px;
+}
+.blogs .title h6 {
+color: #212121;
+font-size: 18px;
+}
+.likes .title {
+margin-bottom: 20px;
+}
+.likes .title h6 {
+color: #212121;
+font-size: 18px;
+}
+.likes .row .col .tabs {
+margin-bottom: 10px;
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.stretch {
+height: 500px;
+}
+.fab {
+transition: all 120ms ease-in-out;
+bottom: 20px !important;
+}
+.fab .btn-large i {
+font-size: 40px;
+}
+.fab .orange i {
+font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+/*
+main {
+padding-top: 40px;
+}
+*/
+
+.jumbo {
+height: 120px !important;
+}
+
+.icons {
+justify-content: center !important;
+}
+
+.rate {
+display: none !important;
+}
+
+.add {
+display: none !important;
+}
+}
+@media screen and (min-width: 600px) {
+.fab {
+display: none;
+}
+}
+
+
+
+
+.box-tools {
+    position: absolute;
+    right: 8px;
+    top: 6px;
+}
+
+
+.btn-box-tool {
+    padding: 5px;
+    font-size: 18px;
+    background: transparent;
+    color: #97a0b3;
+}
+
+
+
+
+
+
+.profile  .avatar {
+    /* content: ''; */
+    display: inline-block;
+    vertical-align: middle;
+    width: 13%;
+    /* height: 50px; */
+    border-radius: 50%;
+    /* background: url(http://1.viki.io/a/ph/avatar_profile-acc6c5a….png?s=30x30&f=t&cb=1); */
+    /* background-size: 100%; */
+    /* margin: 10px 15px; */
+    float: left;
+    margin-right: 18px;
+    margin-top: 4px;
+}
+
+
+
+.profile  .family-info h4 {
+    font-size: 14px;
+    margin: 1px 0px 0px 10px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: none;
+    color: #003a85;
+}
+
